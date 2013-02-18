@@ -1,0 +1,286 @@
+/*
+Theme Name: elastiX
+Theme URI: http://demo.michalchovanec.com/elastix/
+Author: Michal Chovanec
+Author URI: http://michalchovanec.com
+Description: Elastix theme.
+Version: 1.1
+Tags: flexible-width, custom-background, light, white, custom-menu, menus
+Text Domain: mch_elastix
+*/
+
+/* =Reset
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+html {
+	overflow-y: scroll;
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+a:focus {
+	outline: thin dotted;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+	display: block;
+}
+audio,
+canvas,
+video {
+	display: inline-block;
+}
+audio:not([controls]) {
+	display: none;
+}
+del {
+	color: #333;
+}
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin: 24px;
+	margin-bottom: 1.714285714rem;
+}
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+small {
+	font-size: smaller;
+}
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+
+/****************************************************************/
+
+/* theme base styles */
+
+html {
+	font-family: "Helvetica", "Arial", sans-serif;
+}
+
+body {
+	font-size: 100%;
+}
+
+a,
+a:link,
+a:visited,
+a:active,
+a:hover {
+	text-decoration: none;
+	text-transform: none;
+}
+
+/* menu - first menu */
+
+#first_menu_container {
+	background-color: #222;
+	background-image: url(images/fill_left.png);
+	background-position: center;
+}
+
+.first_menu {
+	display: block;
+	background-color: #222;
+	background-image: url(images/menu_logo.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: auto 100%;
+}
+
+.first_menu li {
+	display: block;
+	float: left;
+	border-right: 1px solid #222;
+}
+
+.first_menu a {
+	display: block;
+	font-size: 1em;
+	padding: 1em 2em;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #222;
+}
+
+.first_menu a span {
+	display: block;
+	padding-bottom: .25em;
+	border-bottom: .25em solid #444;
+}
+
+.first_menu a:hover,
+.first_menu li.current-menu-item > a {
+	background-color: #333;
+}
+
+.first_menu a:hover span,
+.first_menu li.current-menu-item > a span {
+	border-bottom-color: #e12;
+}
+
+.first_menu a:active span {
+	border-bottom-color: #666;
+}
+
+.first_menu li ul {
+	display: none;
+	position: absolute;
+	z-index: 999;
+	background-color: #222;
+	box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+}
+
+.first_menu li ul li {
+	float: none;
+	border-bottom: 1px solid #222;
+	border-right: none;
+}
+
+.first_menu li ul li a::after {
+	display: block;
+	clear: both;
+	width: 0;
+	height: 0;
+	content: ".";
+	overflow: hidden;
+}
+
+.first_menu li ul li a span {
+	float: left;
+}
+
+.first_menu li:hover > ul {
+	display: block;
+}
+
+/** Breadcrumb */
+
+.breadcrumb {
+	font-size: 1em;
+	font-weight: bold;
+	color: #aaa;
+	padding: 0 1em;
+	line-height: 1.5em;
+}
+
+.breadcrumb a {
+	color: #666;
+	border-bottom: .25em solid #aaa;
+}
+
+.breadcrumb a:hover {
+	border-bottom-color: #888;
+}
+
+/** Logo */
+
+.logo_link {
+	display: block;
+}
+
+.logo {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+/** Top Post */
+
+.top_post_cont {
+	position: relative;
+}
+
+.top_post_image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.top_post_link {
+	font-size: 1.5em;
+	line-height: 1.5em;
+	font-weight: bold;
+	position: absolute;
+	bottom: 0;
+	right: .1666em;
+	padding: 1em 1.5em;
+	background-color: #fff;
+	color: #444;
+	box-shadow: -.1666em -.1666em 0 rgba(0, 0, 0, 0.25);
+}
+
+.top_post_link:hover {
+	box-shadow: -.1666em -.1666em 0 rgba(0, 0, 0, 0.5);
+}

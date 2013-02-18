@@ -1,0 +1,105 @@
+/* elastix css */
+
+.ex_wrap {
+	display: block;
+	float: none;
+	clear: both;
+	width: auto;
+	padding: 0 1em;
+	margin-bottom: 1em;
+}
+
+.ex_cont {
+	max-width: 1200px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+.ex_in {
+	display: block;
+	float: none;
+	clear: both;
+	padding: 0;
+	margin: 0;
+}
+
+/** One Two */
+
+.ex_one_two {
+	width: 50%;
+	float: left;
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.ex_one_two.ex_1 {
+	padding-right: .5em;
+}
+
+.ex_one_two.ex_2 {
+	padding-left: .5em;
+}
+
+/** One Three */
+
+.ex_one_three {
+	width: 33.333%;
+	float: left;
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.ex_one_three.ex_1 {
+	padding-right: .666em;
+}
+
+.ex_one_three.ex_2 {
+	padding: 0 .333em;
+}
+
+.ex_one_three.ex_3 {
+	padding-left: .666em;
+}
+
+/** Two Three */
+
+.ex_two_three {
+	width: 66.666%;
+	float: left;
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.ex_two_three.ex_1 {
+	padding-right: .666em;
+}
+
+.ex_two_three.ex_2 {
+	padding-left: .666em;
+}
+
+/** Clear fix */
+
+.ex_cont::after,
+.ex_clear,
+.ex_clearfix::after {
+	content: ".";
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+	display: block;
+	float: none;
+}
+
+.debug *:hover {
+	outline: rgba(255, 0, 0, 0.25) solid 1px;
+}
